@@ -72,21 +72,51 @@
 
 # 5.8
 # usernames = ['moment47', 'admin', 'vermic49', 'babs12', 'elv35']
-usernames = ['Vermic49']
+# usernames = ['Vermic49']
 
-for username in usernames:
-    if username == 'admin':
-        print(f"Hello {username}, would you like to see a status report?")
-    else:
-        print(f"Hello {username},thank you for logging in again")
+# for username in usernames:
+#     if username == 'admin':
+#         print(f"Hello {username}, would you like to see a status report?")
+#     else:
+#         print(f"Hello {username},thank you for logging in again")
 
-# 5.9
-if usernames:
-    for username in usernames:
-        print(f"Hello {username}, how are you doing?")
-else:
-    print("\nWe need to find some users!")
+# # 5.9
+# if usernames:
+#     for username in usernames:
+#         print(f"Hello {username}, how are you doing?")
+# else:
+#     print("\nWe need to find some users!")
 
 # 5.10
+current_users = ['Vermic1', 'Viktok133', 'titan32', 'mike32','opius44']
+new_users = ['cody32', 'virus33', 'TITAN32', 'Opius44', 'melvin3']
 
+current_users_mod = [] 
+for user in current_users:
+    current_users_mod.append(user.lower())
+
+print(current_users_mod)
     
+# Algorithm
+for new_user in new_users:
+    if new_user.lower() in current_users_mod:
+        print(f'Please enter a new username, {new_user} not available')
+    else:
+        print(f"{new_user} username is available")
+
+# 5.11
+num_list = [1, 2, 3 , 4, 5, 6, 7, 8, 9]
+
+for num in num_list:
+    if num == 1:
+        ordinal = "st"
+        print(f"{num}{ordinal}")
+    elif num == 2:
+        ordinal = "nd"
+        print(f"{num}{ordinal}")
+    elif num == 3:
+        ordinal = "rd"
+        print(f"{num}{ordinal}")
+    else:
+        ordinal = "th"
+        print(f"{num}{ordinal}")
