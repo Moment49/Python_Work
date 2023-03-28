@@ -11,11 +11,11 @@
 
 # A program to strip whitespaces using lstrip(), rstrip() and strip()
 # # Stripping Whitespace
-favorite_language = '   python'
-print(favorite_language)
+# favorite_language = '   python'
+# print(favorite_language)
 
-favorite_language = favorite_language.lstrip()
-print(favorite_language)
+# favorite_language = favorite_language.lstrip()
+# print(favorite_language)
 
 # Integers and Floats
 # num_1 = 44
@@ -25,9 +25,14 @@ print(favorite_language)
 # num_0 = 5
 # print(num_0 ** 2)
 
-age = 2.0
-age_4 = 3.0
-print(age * age_4)
+# age = 2.0
+# age_4 = 3.0
+# print(age * age_4)
 
-x, y, z = 44, 33, 22
-print(x, y, z)
+# x, y, z = 44, 33, 22
+# print(x, y, z)
+
+# LISTS
+shoppingCart = ['powder', 'bananas', 'oranges', 'melons', 'ice cream']
+
+print(shoppingCart)
