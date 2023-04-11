@@ -33,6 +33,12 @@
 # print(x, y, z)
 
 # LISTS
-shoppingCart = ['powder', 'bananas', 'oranges', 'melons', 'ice cream']
+cart = ['powder', 'bananas', 'oranges', 'melons', 'ice cream']
 
-print(shoppingCart)
+print(cart)
+# Acessing position of Item in Lists
+print(f"This is an item from the list: {cart[len(cart)-1]}")
+
+# len() function
+length_of_list = len(cart) - 1
+print(length_of_list)
