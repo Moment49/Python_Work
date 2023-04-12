@@ -1,0 +1,8 @@
+In python you can learn variables
+In python you can learn loops
+In python you can learn dictionaries
+In python you can learn lists
+In python you can learn functions
+In python you can learn tuples
+In python you can learn objects
+In python you can learn classes

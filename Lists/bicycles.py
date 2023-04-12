@@ -61,5 +61,5 @@ cars = ['bmw', 'audi', 'toyota', 'sabaru']
 print(len(cars))
 
 # Avoiding Index Errors When Working with Lists
-print(cars[5]) 
+# print(cars[5]) 
 
