@@ -56,24 +56,27 @@
 #     'edward': 'ruby',
 #     'phil': 'python', 
 #     }
+
+# language = favorite_languages['edward'].title()
+# print(f"Edwards favourite language is {language}")
 # language = favorite_languages['sarah'].title()
 # print(f"Sarah's favorite language is {language}")
 
 # Using get() to Access Values
 # alien = {'color': 'red', 'speed': 'slow'}
-# point_value = alien.get('points', 'No point value assigned.')
+# point_value = alien.get('points', 'no points assigned')
 # print(point_value)
 
 # Looping through All key-Value Paira
-# user_0 = {
-#     'username': 'efermi',
-#     'first': 'enrico',
-#     'last': 'fermi',
-# }
+user_0 = {
+    'username': 'efermi',
+    'first': 'enrico',
+    'last': 'fermi',
+}
 
-# for key, value in user_0.items():
-#     print(f"\nKey: {key}")
-#     print(f"Value: {value}")
+for key, value in user_0.items():
+    print(f"\nKey: {key}")
+    print(f"Value: {value}")
 
 # favorite_languages = {
 #     'jen': 'python',
@@ -95,9 +98,9 @@
 
 # friends = ['phil', 'sarah']
 # # This code will loop through just the keys of the dict
-# # for name in favorite_languages:
+# for name in favorite_languages:
 # for name in favorite_languages.keys(): 
-#     print(name.title())
+    # print(name.title())
 
 #     if name in friends:
 #         language = favorite_languages[name].title()

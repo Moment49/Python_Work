@@ -1,12 +1,12 @@
 # # 4.1 Pizzas
-# pizzas = ['pepperoni', 'cheese', 'kimchi', 'salmon', 'Peking', 'Tom']
-# # For loop
-# for pizza in pizzas:
-#     # print(pizza)
-#     print(f"I like {pizza} pizza")
-# print(f"I love pepperoni, cheese and kimchi pizaa because the are the best\n"
-#     "The pizza the sell in domino is one of the best in the world")
-# print("I really love pizza!")        
+pizzas = ['pepperoni', 'cheese', 'kimchi', 'salmon', 'Peking', 'Tom']
+# For loop
+for pizza in pizzas:
+    # print(pizza)
+    print(f"I like {pizza} pizza")
+print(f"I love pepperoni, cheese and kimchi pizaa because the are the best\n"
+    "The pizza the sell in domino is one of the best in the world")
+print("I really love pizza!")        
 
 # 4.2 Animals
 # animals = ['Horse', 'Cat', 'Dog']

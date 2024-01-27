@@ -105,18 +105,18 @@ for new_user in new_users:
         print(f"{new_user} username is available")
 
 # 5.11
-num_list = [1, 2, 3 , 4, 5, 6, 7, 8, 9]
+# num_list = [1, 2, 3 , 4, 5, 6, 7, 8, 9]
 
-for num in num_list:
-    if num == 1:
-        ordinal = "st"
-        print(f"{num}{ordinal}")
-    elif num == 2:
-        ordinal = "nd"
-        print(f"{num}{ordinal}")
-    elif num == 3:
-        ordinal = "rd"
-        print(f"{num}{ordinal}")
-    else:
-        ordinal = "th"
-        print(f"{num}{ordinal}")
+# for num in num_list:
+#     if num == 1:
+#         ordinal = "st"
+#         print(f"{num}{ordinal}")
+#     elif num == 2:
+#         ordinal = "nd"
+#         print(f"{num}{ordinal}")
+#     elif num == 3:
+#         ordinal = "rd"
+#         print(f"{num}{ordinal}")
+#     else:
+#         ordinal = "th"
+#         print(f"{num}{ordinal}")
