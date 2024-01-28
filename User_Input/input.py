@@ -40,16 +40,16 @@
 #     current_number += 1
 
 #Letting the User choose when to quit & Using flags
-# prompt = "\nTell me something, and I will repeat it back to you:"
-# prompt += "\nEnter 'quit' to end the program."
+prompt = "\nTell me something, and I will repeat it back to you:"
+prompt += "\nEnter 'quit' to end the program."
 
 
-# message = ""
-# while message != 'quit':
-#     message = input(prompt)
-    
-#     if message != "quit":
-#         print(message)
+message = ""
+while message != "quit":
+    message = input(prompt)
+
+    if message != 'quit' or message != 'QUIT':
+        print(message)
 
 
 # prompt = "\nTell me something, and I will repeat it back to you:"

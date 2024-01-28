@@ -68,15 +68,15 @@
 # print(point_value)
 
 # Looping through All key-Value Paira
-user_0 = {
-    'username': 'efermi',
-    'first': 'enrico',
-    'last': 'fermi',
-}
+# user_0 = {
+#     'username': 'efermi',
+#     'first': 'enrico',
+#     'last': 'fermi',
+# }
 
-for key, value in user_0.items():
-    print(f"\nKey: {key}")
-    print(f"Value: {value}")
+# for key, value in user_0.items():
+#     print(f"\nKey: {key}")
+#     print(f"Value: {value}")
 
 # favorite_languages = {
 #     'jen': 'python',
@@ -142,33 +142,33 @@ for key, value in user_0.items():
 # for alien in aliens:
 #     print(alien)
 
-# Creating a fleet of aliens
-aliens = []
-for alien_num in range(30):
-    alien_new = {'color': 'gold', 'points': 22, 'speed': 'fast'}
-    # Append the new alien created to the aliens list
-    aliens.append(alien_new)
+# # Creating a fleet of aliens
+# aliens = []
+# for alien_num in range(30):
+#     alien_new = {'color': 'gold', 'points': 22, 'speed': 'fast'}
+#     # Append the new alien created to the aliens list
+#     aliens.append(alien_new)
 
 
-for alien in aliens[:3]:
-    if alien['color'] == 'gold':
-        alien['color'] = 'yellow'
-        alien['speed'] = 'medium'
-        alien['points'] = 10
+# for alien in aliens[:3]:
+#     if alien['color'] == 'gold':
+#         alien['color'] = 'yellow'
+#         alien['speed'] = 'medium'
+#         alien['points'] = 10
 
-# Show First 5 aliens
-for alien in aliens[:5]:
-    print(alien)
-# Show how many aliens have been created
-print(f"Total number of aliens: {len(aliens)}")
+# # Show First 5 aliens
+# for alien in aliens[:5]:
+#     print(alien)
+# # Show how many aliens have been created
+# print(f"Total number of aliens: {len(aliens)}")
 
 # A list in a Dictionary
-pizza ={
-    'crust': 'thick',
-    'toppings': ['mushroom', 'extra cheese'],
-}
+# pizza ={
+#     'crust': 'thick',
+#     'toppings': ['mushroom', 'extra cheese'],
+# }
 
-# summarize the order
+# # summarize the order
 # print(f"You ordered a {pizza['crust']} crust pizza with the following toppings:")
 
 # for topping in pizza['toppings']:
@@ -203,10 +203,9 @@ users = {
 }
 
 for username, user_info in users.items():
-    print(f"\nUsername: {username}")
-    full_name = f"{user_info['first']} {user_info['last']}"
-    location = user_info['location']
+    print(f"\nUsername : {username}")
+    fullname = f"{user_info['first']}  {user_info['last']}"
+    location = f"{user_info['location']}"
 
-    print(f"\tFull name: {full_name.title()}")
-    print(f"\tLocation: {location.title()}")
-
+    print(f"fullname: {fullname}")
+    print(f"location: {location}")
