@@ -12,15 +12,15 @@
 #     print(f"My {animal_type}'s name is {pet_name.title()}")
 
 # describe_pet('cat', 'candy')
-# describe_pet(pet_name='bruno', animal_type='dog')
+# describe_pet('dog', pet_name='bruno')
 
 #Default Values
 # def describe_pet(pet_name, animal_type='dog'):
-#     """Display information about a pet"""
+# #     """Display information about a pet"""
 #     print(f"\nI have a {animal_type}")
 #     print(f"My {animal_type}'s name is {pet_name.title()}")
 
-# # describe_pet('cat', 'candy')
+# describe_pet('candy', 'cat')
 # # describe_pet(pet_name='bruno')
 # describe_pet('bruno')
 
@@ -126,24 +126,24 @@
 # show_completed_models(completed_models)
 
 # 8.15 Printing Models
-import printing_func
-import printing_func as pf
-from printing_func import  print_models
-from printing_func import  print_models as pm
-from printing_func import  show_completed_models as sm
-from printing_func import  show_completed_models
+# import printing_func
+# import printing_func as pf
+# from printing_func import  print_models
+# from printing_func import  print_models as pm
+# from printing_func import  show_completed_models as sm
+# from printing_func import  show_completed_models
 
 
-unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
-completed_models = []
-printing_func.print_models(unprinted_designs, completed_models)
-pf.print_models(unprinted_designs, completed_models)
-print_models(unprinted_designs, completed_models)
-pm(unprinted_designs, completed_models)
-show_completed_models(completed_models)
-sm(completed_models)
-printing_func.show_completed_models(completed_models)
-pf.show_completed_models(completed_models)
+# unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+# completed_models = []
+# printing_func.print_models(unprinted_designs, completed_models)
+# pf.print_models(unprinted_designs, completed_models)
+# print_models(unprinted_designs, completed_models)
+# pm(unprinted_designs, completed_models)
+# show_completed_models(completed_models)
+# sm(completed_models)
+# printing_func.show_completed_models(completed_models)
+# pf.show_completed_models(completed_models)
 
 
 # Passing an Arbitrary Number of Arguments
