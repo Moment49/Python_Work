@@ -45,30 +45,29 @@
 
 # Making an Argument Optional
 # def get_formatted_name(first_name, last_name, middle_name=''):
-#     """Return a full name, neatky formatted"""
+# #     """Return a full name, neatky formatted"""
 #     if middle_name:
-#         full_name = f"{first_name} {middle_name} {last_name}"
+#         fullname = f"{first_name} {middle_name} {last_name}"
 #     else:
-#         full_name = f"{first_name} {last_name}"
+#         fullname = f"{first_name} {last_name}"
+    
+#     return fullname.title()
 
-#     return full_name.title()
 
-# musician = get_formatted_name('john','hooker', 'lee')
-# print(musician)
-
-# musician = get_formatted_name('john','hooker')
+# musician = get_formatted_name('Elvis','Ibenacho', 'Chimdi')
 # print(musician)
 
 # Returning a Dictionary
 # def build_person(first_name, last_name, age=None):
-#     """Return a dict of Info about a person"""
-#     person = {'first': first_name, 'last': last_name}
-#     if age:
-#         person['age'] = age
-#     return person
+#   """Return a dict of Info about a person"""
+#   person = {'first': first_name, 'last': last_name}
+#   if age:
+#     person['age'] = age
+#   return person
 
-# programmer = build_person('Elvis', 'Ibenacho', age=47)
+# programmer = build_person('Elvis', 'Ibenacho', 27)  
 # print(programmer)
+  
 
 # Function with a While Loop
 # def build_person(first_name, last_name):
@@ -78,7 +77,7 @@
 
 
 # while True:
-#     "# Accept user Input"
+#     " Accept user Input"
 #     print("\nPlease tell me your name")
 #     print("Enter q to quit program")
 
@@ -109,8 +108,9 @@
 #     """
 #     while unprinted_designs:
 #         current_design = unprinted_designs.pop()
-#         print(f"Printing Model: {current_design}")
-#         # Appending the current design
+
+#         print(f"Printing model: {current_design}")
+#         # Append to completed models
 #         completed_models.append(current_design)
 
 # def show_completed_models(completed_models):
@@ -137,6 +137,7 @@
 # unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
 # completed_models = []
 # printing_func.print_models(unprinted_designs, completed_models)
+# printing_func.show_completed_models(completed_models)
 # pf.print_models(unprinted_designs, completed_models)
 # print_models(unprinted_designs, completed_models)
 # pm(unprinted_designs, completed_models)
@@ -156,32 +157,15 @@
 # make_pizza(16, 'pepperoni', 'green peppers', 'extra cheese')
 
 # Using Arbitrary Keyword Arguments
-# def build_profile(first, last, **user_info):
-#     """Build a dict containing everything we know about a user"""
-#     user_info['first_name'] = first
-#     user_info['last_name'] = last
-#     return user_info
+def build_profile(first, last, **user_info):
+    """Build a dict containing everything we know about a user"""
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
 
-# user_profile = build_profile('albert', 'einstein', 
-#                              location='princeton', field='physics')
+user_profile = build_profile('albert', 'einstein', 
+                           location='princeton', field='physics')
 
-# print(user_profile)
+print(user_profile)
 
 # Importing an Entire Module
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

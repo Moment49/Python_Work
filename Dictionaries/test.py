@@ -236,10 +236,33 @@
 # describe_city('Nova Scotia')
 
 # Return Values in Functions
+# def names(names):
+#     """Function to print names"""
+#     for name in names:
+#         msg = f"Hello, {name}"
+#         print(msg)
 
+# usernames = ['Elvis', 'Todin', 'John', 'Kelvin']
+# names(usernames)
 
+# Cars
+# def make_car(car_manufacturer, model, **car_info):
+#     """A function to store car information in  a dictionary"""
+#     car_info['car_manufacturer'] = car_manufacturer
+#     car_info['car_model'] = model
 
+#     return car_info
 
+# def print_car_info(car_information):
+#     """"A function to print car information stored in a dictionary"""
+#     print("Below Is Information About Car:")
+#     for car_key, car_value in car_information.items():
+#         print(f"{car_key.upper()}: {car_value}")
+
+# car = make_car('Toyota', '2019', color='grey', tow_package=True)
+# print_car_info(car)
+
+# Chapter 9
 
 
 
