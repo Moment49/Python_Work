@@ -273,32 +273,32 @@ from random import choice
 # print(first_up)
 
 # 9.13
-# class Dice:
-#     """An attempt to model a dice roll"""
-#     def __init__(self, sides=6):
-#         """Initilaize a dice with sides"""
-#         self.sides = sides
+class Dice:
+    """An attempt to model a dice roll"""
+    def __init__(self, sides=6):
+        """Initilaize a dice with sides"""
+        self.sides = sides
 
-#     def roll_dice(self):
-#         """Roll the dice once using the random method"""
-#         # Create an emoty list to hold all rolled dice
-#         rolled_num = []
-#         for value in range(1, 11):
-#             rand_num = randint(1, self.sides)
-#             rolled_num.append(rand_num)
-#         return rolled_num
+    def roll_dice(self):
+        """Roll the dice once using the random method"""
+        # Create an empty list to hold all rolled dice
+        rolled_num = []
+        for value in range(1, 11):
+            rand_num = randint(1, self.sides)
+            rolled_num.append(rand_num)
+        return rolled_num
 
-# # 6 sided dice and roll 10 times
-# roll_6 = Dice()
-# print(roll_6.roll_dice())
+# 6 sided dice and roll 10 times
+roll_6 = Dice()
+print(roll_6.roll_dice())
 
-# # 10 sided dice and 10 rolles
-# roll_10 = Dice(10)
-# print(roll_10.roll_dice())    
+# 10 sided dice and 10 rolles
+roll_10 = Dice(10)
+print(roll_10.roll_dice())    
 
-# # 20 sided and roll 10times
-# roll_20 = Dice(20)
-# print(roll_20.roll_dice())
+# 20 sided and roll 10times
+roll_20 = Dice(20)
+print(roll_20.roll_dice())
 
 
 # 9.14 Lottery / Lottery analysis
@@ -310,7 +310,7 @@ def random_numbers(lottery_numbers):
         lottery = choice(lottery_numbers)    
         # Checking if the lottery number is already in ticket else generate
         # another number
-        while lottery in wining_ticket:
+        if lottery in wining_ticket:
             # Generate another number
             lottery = choice(lottery_numbers)
         wining_ticket.append(lottery)
@@ -321,7 +321,6 @@ def check_ticket(win_ticket, played_ticket):
     for element in played_ticket:
         if element not in win_ticket:
             return False
-
     return True
 
 lottery_nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'A', 'B', 'C', 'D', 'E']

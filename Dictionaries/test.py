@@ -263,6 +263,93 @@
 # print_car_info(car)
 
 # Chapter 9
+# class Restaurant:
+#     """A class to model a restaurant"""
+#     def __init__(self, restaurant_name, cusine_type):
+#         """Instantiate attributes for a restaurant"""
+#         self.restaurant_name = restaurant_name
+#         self.cusine_type = cusine_type
+
+#     def describe_restaurant(self):
+#         """A method to display the restaurant and cusine_type"""
+#         print(f"The name of my restaurant is {self.restaurant_name}")
+#         print(f"We serve the {self.cusine_type} dish")
+    
+#     def open_restaurant(self):
+#         """A method to open the restaurant"""
+#         print(f"Hello everyone the {self.restaurant_name} restaurant is now open")
+
+
+
+# res_1 = Restaurant('Mamas_Kitchen', "Jollof Rice")
+# print(res_1.restaurant_name)
+# print(res_1.cusine_type)
+# res_1.describe_restaurant()
+# res_1.open_restaurant()
+
+
+class User:
+    user_type = 'Local User'
+    """A class to model a user of a website"""
+    def __init__(self, first_name, last_name, age):
+        """Initialize the instance attributes"""
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+        self.skin_color = 'dark'
+        self.login_attempts = 0
+
+    def describe_user(self):
+        """A method to print info about the user"""
+        print("\nInformation about the users of your website: ")
+        print(f"Name: {self.first_name} {self.last_name}")
+        print(f"Age: {self.age}")
+        print(f"Skin_color: {self.skin_color}")
+
+    def greet_user(self):
+        """Greet the user"""
+        print(f"\nHello {self.first_name} {self.last_name}, welcome to Security software developer profession")
+   
+    def increment_login(self):
+        self.login_attempts += 1
+        print(f"Login attempts: {self.login_attempts}")
+
+    def reset_login_attempts(self):
+        if self.login_attempts >= 1 :
+            self.login_attempts = 0
+            print(f"Reset login: {self.login_attempts}")
+        else:
+            print("You can't reset again")
+            
+        
+
+class Admin(User):
+    """A child class to the User class"""
+    def __init__(self, first_name, last_name, age, *privileges):
+        super().__init__(first_name, last_name, age)
+        self.privileges = privileges
+
+    def show_admin_privileges(self, **admin_info):
+        admin_info['firstname'] = self.first_name
+        admin_info['lastname'] = self.last_name
+        admin_info['age'] = self.age
+        admin_info['priviledges'] = self.privileges
+        # for admin_pri in self.privileges:
+        #     print(admin_pri)
+        return admin_info
+
+
+user_1 = User('John', 'Maxwell', '47')
+my_admin = Admin('Elvis', 'Ibenacho', '27', 'Can update post', 'can add post', 'can delete post')
+admin_info = my_admin.show_admin_privileges()
+print(admin_info)
+print("Admin information and priveledges")
+
+for admin_key, admin_value in admin_info.items():
+    print(f"{admin_key}: {admin_value}")
+    if admin_key == 'priviledges':
+        for priveledge in admin_value:
+            print(priveledge)
 
 
 
