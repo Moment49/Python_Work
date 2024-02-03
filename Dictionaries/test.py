@@ -368,7 +368,7 @@
 #             file_obj.write(f"\n{username}")
 
     
-filename = 'python_work/text_files/user_reasons.txt'
+
 
 # prompt = "Enter 'q' or 'Q' to exit program\n"
 # prompt += "Enter your name: "
@@ -388,7 +388,8 @@ filename = 'python_work/text_files/user_reasons.txt'
 #                 file_obj.write(f"\n{user_response}")
 
 
-#USING OOP
+#USING 
+filename = 'python_work/text_files/user_reasons.txt'
 class Poll:
     """A class to model a poll"""
     def __init__(self, username, user_response): 
@@ -398,8 +399,24 @@ class Poll:
         user_info[self.username] = self.user_response
         with open(filename, 'a') as file_obj:
             file_obj.write(self.user_response)
+        return user_info
 
-Poll_1 = Poll('Elvis Ibenacho', 'I love programming because I can model real world problems which profer solution')
-Poll_1.store_response()
+
+Poll_2 = Poll('Elvis', 'ysguygs')
+Poll_2.store_response()
+# Prompt User
+# prompt = "Enter 'q' or 'Q' to exit program\n"
+# prompt += "Enter your name: "
+# while True:
+#     usernames = input(prompt)
+#     if usernames == 'q' or usernames == 'Q':
+#         break
+#     else:
+#         user_responses = input("Why do you like programming: ")
+#         if user_responses == 'q' or user_responses == 'Q':
+#             break
+#         else:
+#             Poll_1 = Poll('Elvis', 'GSDJHCJSHHSD')
+#             print(Poll_1.store_response())
 
 
