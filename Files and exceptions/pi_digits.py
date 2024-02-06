@@ -37,26 +37,26 @@ filename = 'python_work/text_files/pi.txt'
 # # print(len(pi_string))
 
 # # Writing multiple lines to a file
-filename = 'python_work/text_files/programming.txt'
+# filename = 'python_work/text_files/programming.txt'
 
-with open(filename, 'w') as file_obj:
-    file_obj.write("I love cybersecurity and I am building software projects\n")
-    file_obj.write("I love creating new applications\n")
+# with open(filename, 'w') as file_obj:
+#     file_obj.write("I love cybersecurity and I am building software projects\n")
+#     file_obj.write("I love creating new applications\n")
 
-# # #Appending to a file 
-with open(filename, 'a') as file_obj:
-    file_obj.write("I also love finding meaning in large datasets.\n")
-    file_obj.write("I also love creating apps that can run in a broswer.\n")
+# # # #Appending to a file 
+# with open(filename, 'a') as file_obj:
+#     file_obj.write("I also love finding meaning in large datasets.\n")
+#     file_obj.write("I also love creating apps that can run in a broswer.\n")
 
 # # Expections
 # # Handling the ZeroDivisionError Expection
-# # print(5/0)
+# print(5/0)
 
 # # Using Try-expect Blocks
-# # try:
-# #     print(5/0)
-# # except ZeroDivisionError:
-# #     print("You can't divide by zero")
+# try:
+#     print(5/0)
+# except ZeroDivisionError:
+#     print("You can't divide by zero")
 
 
 # # Using Expections to Prevent Crashes
@@ -79,46 +79,46 @@ with open(filename, 'a') as file_obj:
 # #     else:
 # #         print(answer)
 
-# # Handlinf fileNotFoundError
+# # Handling fileNotFoundError
 
 # # Analyzing Text & # Failing Silently
 
-# # def count_words(filename):
-# #     """Count the approximate number of words in the file. """
-# #     try:
-# #         with open(filename, encoding='utf-8') as f:
-# #             contents = f.read()
-# #     except FileNotFoundError:
-# #         # print(f'Sorry, the file {filename} does not exist.')
-# #         pass
-# #     else: 
-# #         words = contents.split()
-# #         num_words = len(words)
-# #         print(f"The file {filename} has about {num_words} words.")
+# def count_words(filename):
+#     """Count the approximate number of words in the file. """
+#     try:
+#         with open(filename, encoding='utf-8') as f:
+#             contents = f.read()
+#     except FileNotFoundError:
+#         print(f'Sorry, the file {filename} does not exist.')
+#         pass
+#     else: 
+#         words = contents.split()
+#         num_words = len(words)
+#         print(f"The file {filename} has about {num_words} words.")
 
-# # filenames = ['python_work/text_files/alice.txt','python_work/text_files/moby_dick.txt',
-# #               'python_work/text_files/little.txt', 'python_work/text_files/genius.txt']
+# filenames = ['python_work/text_files/alice.txt','python_work/text_files/moby_dick.txt',
+#               'python_work/text_files/little.txt', 'python_work/text_files/genius.txt']
 
-# # for filename in filenames:
-# #     count_words(filename)
+# for filename in filenames:
+#     count_words(filename)
 
 # # Storing Data
 # # json.dump & json.load
 
-# import json
+import json
 
-# # numbers = [2, 3, 5, 7, 11, 13]
+numbers = [2, 3, 5, 7, 11, 13, 15, 17, 21]
 
-# # filename = 'python_work/text_files/numbers.json'
-# # with open(filename, 'w') as f:
-# #     json.dump(numbers, f)
+filename = 'python_work/text_files/numbers.json'
+with open(filename, 'w') as f:
+    json.dump(numbers, f)
 
 # # Json.load()
 # # filename = 'python_work/text_files/numbers.json'
-# # with open(filename) as f:
-# #     numbers = json.load(f)
+with open(filename) as f:
+    numbers = json.load(f)
 
-# # print(numbers)
+print(numbers)
 
 # # Saving and Reading User Generated data
 # # username = input("What is your name? ")

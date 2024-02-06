@@ -368,7 +368,7 @@
 #             file_obj.write(f"\n{username}")
 
     
-
+filename = 'text_files/user_reasons.txt'
 
 # prompt = "Enter 'q' or 'Q' to exit program\n"
 # prompt += "Enter your name: "
@@ -389,21 +389,22 @@
 
 
 #USING 
-filename = 'python_work/text_files/user_reasons.txt'
-class Poll:
-    """A class to model a poll"""
-    def __init__(self, username, user_response): 
-        self.username = username
-        self.user_response = user_response
-    def store_response(self, **user_info):
-        user_info[self.username] = self.user_response
-        with open(filename, 'a') as file_obj:
-            file_obj.write(self.user_response)
-        return user_info
+
+# class Poll:
+#     """A class to model a poll"""
+#     def __init__(self, username, user_response): 
+#         self.username = username
+#         self.user_response = user_response
+#     def store_response(self, **user_info):
+#         # filename = 'python_work/text_files/user_reasons.txt'
+#         user_info[self.username] = self.user_response
+#         with open(filename, 'a') as file_obj:
+#             file_obj.write(f"\n{self.user_response}")
+#         return user_info
 
 
-Poll_2 = Poll('Elvis', 'ysguygs')
-Poll_2.store_response()
+# Poll_2 = Poll('Elvis', 'ysguygs')
+# Poll_2.store_response()
 # Prompt User
 # prompt = "Enter 'q' or 'Q' to exit program\n"
 # prompt += "Enter your name: "
@@ -416,7 +417,13 @@ Poll_2.store_response()
 #         if user_responses == 'q' or user_responses == 'Q':
 #             break
 #         else:
-#             Poll_1 = Poll('Elvis', 'GSDJHCJSHHSD')
+#             Poll_1 = Poll(usernames, user_responses)
 #             print(Poll_1.store_response())
 
+# Testing Your Code chapter 11
+# import unittest
+# from name_func import get_formatted_name
 
+# class NamesTestCases(unittest.TestCase):
+#     """Test for functions"""
+#     def test_first_last_name(self)
